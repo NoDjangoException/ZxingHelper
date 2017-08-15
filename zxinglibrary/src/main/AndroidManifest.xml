@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.landi.zxinglibrary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".activity.CaptureActivity" />
+        <activity android:name=".activity.TestActivity" />
+        <activity android:name=".activity.RxCameraActivity"></activity>
+    </application>
+
+</manifest>
