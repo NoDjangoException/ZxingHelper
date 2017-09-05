@@ -116,11 +116,14 @@ public class RxDecodeHelper {
 			return;
 		}
 
-		//因为相机默认是横屏，而矩形信息是以竖屏获得的，故需要转换。
-		mScanningRectInfo.changeToHorizontal();
-
 		int cameraWidth = mCameraConfigManager.getCameraResolution().x;
 		int cameraHeight = mCameraConfigManager.getCameraResolution().y;
+
+		if (cameraWidth > cameraHeight){
+			//因为相机默认是横屏，而矩形信息是以竖屏获得的，故需要转换。
+			mScanningRectInfo.changeToHorizontal();
+		}
+
 
 		/** 计算最终截取的矩形的左上角顶点x坐标 */
 		int x = (int)(cameraWidth*mScanningRectInfo.xRatio);

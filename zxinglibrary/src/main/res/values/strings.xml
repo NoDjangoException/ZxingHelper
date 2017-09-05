@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ZxingLibrary</string>
+    <string name="ask_for_permission">尚有必要权限未打开，请前往打开。</string>
 </resources>
